@@ -5,11 +5,7 @@ function domainName(url){
       let answer;
       const wwwIndex = url.indexOf("www");
       const slashIndex = url.indexOf("//");
-      console.log(wwwIndex);
-      console.log(slashIndex);
-      
-      
-      
+
       if (wwwIndex < 0 && slashIndex < 0) {
           firstOccurance = url.indexOf(".");
           answer = url.substring(0, firstOccurance);
@@ -24,6 +20,3 @@ function domainName(url){
       }
       return answer;
   }
-
-  console.log(domainName("http://google.com"));
-  console.log(domainName("google.com"));
